@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/d90b7d915f.js" crossorigin="anonymous"></script>
+  
+    
+</head>
+<body>
+    <div class="main w-full h-screen bg-green-50  p-10">
+
+        <!-- /////// navbar ////// -->
+
+        <nav  class="flex w-full justify-between pl-10 pr-14">
+            <div>
+                <a href="/" class="font-semibold text-xl">Khatabook</a>
+            </div>
+            <div class="flex gap-8">
+                <a href="/" class="font-semibold ">Home</a>
+                <a href="/create" class="font-semibold text-blue-600 cursor-pointer">Create New Hisab</a>
+            </div>
+        </nav>
+ 
+        <!-- ////////// body /////////// -->
+
+        <div class="cotainer pl-10 pr-14 mt-14">
+            <form action="/create" method="post">
+            <h1 class="font-semibold text-xl">Create New Hisaab</h1>
+            <textarea name="text" id="" class="bg-gray-200 w-1/3 h-[340px] rounded-md outline-none mt-6 resize-none p-6 block" placeholder="ata, daal, chatni" "></textarea>
+            <input type="submit" class="bg-[#0c8cf7] p-2 pl-6 pr-6 text-sm text-white rounded-md mt-4" value="Create Hisaab " class="">
+        </form>
+
+           
+
+        </div>
+
+
+    </div>
+</body>
+</html>
