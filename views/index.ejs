@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+   <div class="main p-10 h-screen w-full">
+    
+    <!-- //////////////// navbar /////////////////// -->
+    <nav  class="flex w-full justify-between pl-10 pr-14">
+        <div>
+            <a href="/" class="font-semibold text-xl">Khatabook</a>
+        </div>
+        <div class="flex gap-8">
+            <a href="" class="font-semibold ">Home</a>
+            <a href="/create" class="font-semibold  cursor-pointer">Create New Hisab</a>
+        </div>
+    </nav> 
+
+
+    <!-- /////////////////// create account //////////////////////// -->
+
+        <div class="account flex flex-col items-center justify-center mt-60">
+            <h1 class="text-xl mb-4 font-semibold mr-30">Create New Account</h1>
+
+            <form action="/create" method="post">
+                <input type="text" placeholder="Email" name="email" class="block mr-26 px-3 py-2 bg-gray-100 text-gray-600 outline-none rounded-md">
+                <input type="password" placeholder="Password" name="password" class="block  px-3 py-2 mt-3 bg-gray-100 text-gray-600 outline-none rounded-md">
+                <input type="submit" value="Create Account" class="block bg-[#0c8cf7]  px-3 py-2 text-sm text-white mt-3 rounded-md ">
+            </form>
+        </div>
+
+   </div>
+</body>
+</html>
